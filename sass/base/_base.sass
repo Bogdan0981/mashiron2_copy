@@ -1,0 +1,43 @@
+html
+    &:root
+        font-size: 10px
+
+@font-face 
+    font-family: 'PP Neue Montreal'
+    src: url('ppneuemontreal-bold.woff') format(woff)
+
+@font-face 
+    font-family: 'PP Neue Montreal'
+    src: url('ppneuemontreal-bold.woff2') format(woff2)
+
+@font-face 
+    font-family: 'PP Neue Montreal'
+    src: url('ppneuemontreal-medium.woff') format(woff)
+
+@font-face 
+    font-family: 'PP Neue Montreal'
+    src: url('ppneuemontreal-medium.woff2') format(woff2)  
+
+ul, li
+    margin: 0
+    padding: 
+
+p
+    margin: 0
+    padding: 0
+
+section 
+    margin-bottom: 7rem
+    @media screen and (max-width: 1200px)
+        margin-bottom: 6rem
+    @media screen and (max-width: 480px)
+        margin-bottom: 4rem
+body 
+    background: #282726
+
+.row
+    --bs-gutter-x: 0
+    justify-content: space-between
+
+.canvas
+    display: none

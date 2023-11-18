@@ -1,0 +1,31 @@
+.title-first
+    @include text(PP Neue Montreal, 17rem, 700, $color-green)
+    margin-bottom: 2rem
+    letter-spacing: -3px
+    text-align: right
+    width: 100%
+    @media screen and (max-width: 1200px) 
+        font-size: 11rem
+        text-align: right
+    @media screen and (max-width: 480px)
+        font-size: 7.1rem
+        text-align: center
+
+.descr
+    font-size: 2rem
+    color: $color-white
+    text-align: right
+    @media screen and (max-width: 1200px)
+        font-size: 1.7rem
+    @media screen and (max-width: 480px)
+        font-size: 1.3rem
+
+.title-secondary 
+    @include text( PP Neue Montreal, 10rem, 500, $color-green)
+    margin-bottom: 2rem
+    @media screen and (max-width: 1200px)
+        font-size: 10rem
+        margin-bottom: 3rem
+    @media screen and (max-width: 480px)
+        font-size: 4rem
+    

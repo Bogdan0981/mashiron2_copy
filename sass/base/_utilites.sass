@@ -1,0 +1,144 @@
+.margin-bottom-20px
+    margin-bottom: 2rem
+
+.margin-bottom-35px
+    margin-bottom: 3.5rem
+
+.margin-right-20px
+    margin-right: 2rem
+
+.margin-right-0
+    margin-right: 0 !important
+
+.bcg-black
+    background: $color-black !important
+
+.bcg-white
+    background: $color-white !important
+
+.color-white
+    color: $color-white
+
+.margin-bottom-400px
+    margin-bottom: 40rem !important
+
+.width-32
+    width: 32%
+
+.margin-right-27px
+    margin-right: 2.7rem
+
+.fdrr
+    flex-direction: row-reverse
+
+.width-100
+    width: 100%
+
+
+
+.threeFoto-row
+    display: flex
+    margin-bottom: 2.6rem
+    @media (max-width: 480px)
+        justify-content: space-between
+        img
+            &:nth-child(1)
+                width: 47%
+                margin-right: 1.6rem !important
+            &:nth-child(2)
+                width: 47%
+                margin-right: 0 !important
+            &:nth-child(3)
+                display: none
+    img
+        width: 32%
+        &:not(:last-child)
+            margin-right: 2.7rem
+
+.twoBig-fotos
+    display: flex
+    margin-bottom: 2.6rem
+    @media (max-width: 480px)
+        display: block
+    &-left
+        width: 32%
+        display: flex
+        flex-direction: column
+        margin-right: 2.7rem
+        @media (max-width: 480px)
+            flex-direction: row
+            width: 100%
+            justify-content: space-between
+            img
+                &:nth-child(1)
+                    width: 47%
+                    margin-right: 1.6rem
+                &:nth-child(2)
+                    width: 47%
+                    height: 100%
+        img
+            &:not(:last-child)
+                margin-bottom: 3rem
+    &-right
+        display: flex
+        @media (max-width: 480px)
+            flex-direction: column
+            align-items: center
+            img
+                &:nth-child(1)
+                    margin-right: 0 !important
+                    width: 100%
+                &:nth-child(2)
+                    display: none
+        img
+            width: 48.4%
+            &:not(:last-child)
+                margin-right: 2.6rem
+
+
+.two-fotos
+    display: flex
+    margin-bottom: 2.6rem
+    @media (max-width: 480px)
+        display: none
+    img
+        &:nth-child(1)
+            width: 66%
+            margin-right: 2.7rem
+        &:nth-child(2)
+            width: 32%
+
+
+.five-fotos
+    display: flex
+    margin-bottom: 2.6rem
+    @media (max-width: 480px) 
+        flex-direction: column
+        align-items: center
+        img
+            width: 100%
+            margin-right: 0
+    &-left
+        width: 32%
+        margin-right: 2.7rem
+        @media (max-width: 480px) 
+            width: 100%
+            margin-right: 0
+            img
+                &:nth-child(1)
+                    margin-bottom: 2rem !important
+                &:nth-child(2)
+                    display: none
+        img
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 2.6rem
+    &-right
+        display: flex
+        flex-direction: column
+        width: 32%
+        @media (max-width: 480px) 
+            display: none
+        img
+            &:not(:last-child)
+                margin-bottom: 2.6rem

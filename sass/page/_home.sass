@@ -1,0 +1,121 @@
+.hero
+    background: url(../img/hero/hero-bcg.png)
+    background-position: center center
+    background-size: 100% 100%
+    width: 100%
+    &-mobile-button
+        border-color: $color-green
+        color: $color-green
+        transition: all .3s
+        display: none
+        @media (max-width: 480px)
+            display: block
+        a
+            color: $color-green
+            font-size: 1.3rem
+            text-decoration: none
+        &:active
+            background: $color-green
+        &:active a
+            color: $color-white
+    &-content
+        padding: 10rem
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and (max-width: 480px)
+            padding: 0 1rem
+            padding-bottom: 14rem
+canvas
+    margin-right: 2rem
+    position: absolute
+    left:  5rem
+    top: -11rem
+
+.folders
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.about
+    padding: 3rem
+    &-img
+        width: 100%
+        img
+            width: 100%
+            height: 100%
+    &-row
+        @media screen and (max-width: 480px)
+            display: block
+    &-col
+        @media screen and (max-width: 480px)
+            width: 100%
+            img
+                @media screen and (max-width: 480px)
+                    margin-bottom: 2rem
+
+.contacts
+    img
+        width: 100%
+        height: 100%
+
+
+.contacts
+    padding: 0 3rem
+    img
+        @media screen and(max-width: 1200px)
+            display: none
+    &-nameSurname
+        @media screen and (max-width: 1200px)
+            display: flex
+    &-emailNumber
+        @media screen and (max-width: 480px)
+            display: flex
+    &-links
+        display: flex
+        flex-direction: column
+        align-items: end
+        margin-bottom: 3rem
+        @media screen and (max-width: 1200px)
+            flex-direction: row
+            margin-bottom: 3rem
+        @media screen and (max-width: 1200px)
+            margin-bottom: 2rem
+            width: 170%
+    &-link
+        font-size: 1.5rem
+        font-weight: 400
+        color: $color-white
+        text-decoration: none
+        transition: all .3s
+        @media screen and (max-width: 1200px)
+            margin-bottom: 0 !important
+            &:not(:last-child)
+                margin-right: 3rem
+        &:hover
+            color: $color-green
+        &:not(:last-child)
+            margin-bottom: 2rem
+    &-inputs
+        display: flex
+        flex-direction: column
+        @media screen and (max-width: 1200px)
+            width: 240%
+    &-input
+        @media screen and (max-width: 480px)
+            margin-bottom: 2rem
+
+
+#hero-descr
+    br
+        &:nth-child(1)
+            display: none
+        &:nth-child(3)
+            display: none
+    @media (max-width: 460px) 
+        br
+            &:nth-child(1)
+                display: block
+            &:nth-child(3)
+                display: block

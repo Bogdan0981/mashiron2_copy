@@ -1,0 +1,89 @@
+.header
+    padding-top: 2rem
+    padding-right: 10rem
+    display: flex
+    justify-content: end
+    margin-bottom: 7rem
+    @media screen and (max-width: 1200px) 
+        padding-right: 4.7rem
+        padding-top: 4.7rem
+    &3D
+        @media (max-width: 480px) 
+            margin-bottom: 6rem !important
+    &-burger
+        display: flex
+        flex-direction: column
+        transition: all .3s
+        cursor: pointer
+        display: none
+        @media (max-width: 1200px )
+            display: flex
+            flex-direction: column
+        &_active
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 0
+            right: 0
+            background: $color-green
+            width: 100%
+            height: 100%
+            display: none
+            transition: all .3s
+            a
+                @include text(PP Neue Montreal, 5.5rem, 700, $color-white)
+                text-decoration: none
+                @media screen and (max-width: 480px) 
+                    font-size: 2.9rem
+                &:not(:last-child)
+                    margin-bottom: 3rem
+            &-close
+                position: absolute
+                right: 4.7rem
+                top: 4.7rem
+                &:hover &_item
+                    width: 3.5rem
+                &:active &_item
+                    width: 4.5rzem
+                &_item
+                    background: $color-white
+                    width: 4.5rem
+                    height: .5rem   
+                    transition: all .3s
+                    cursor: pointer
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                        position: absolute
+                        top: -1px
+                    &:nth-child(2)
+                        transform: rotate(45deg)
+        &:hover &_item
+            width: 4rem
+        &:active &_item
+             width: 5rem
+        &_item
+            background: $color-green
+            width: 5rem
+            height: .5rem
+            transition: all .3s
+            &:not(:last-child)
+                margin-bottom: .5rem
+    &-list
+        list-style: none
+        display: flex
+        @media screen and (max-width: 1200px )
+            display: none
+        &_item
+            &:not(:last-child)
+                margin-right: 3rem
+            a
+                font-size: 2rem
+                color: $color-white
+                transition: all .3s
+                text-decoration: none
+                &:hover
+                    text-decoration: none
+                    color: $color-green
+                &:focus
+                    color: $color-white
